@@ -12,7 +12,6 @@ public class Transaction {
 	private Integer transactionId;
 	private LocalDateTime bookedDate;
 	private Integer odcId;
-	private Integer buildingId;
 	private Integer bookedSeats;
 	
 	public Integer getTransactionId() {
@@ -33,12 +32,7 @@ public class Transaction {
 	public void setOdcId(Integer odcId) {
 		this.odcId = odcId;
 	}
-	public Integer getBuildingId() {
-		return buildingId;
-	}
-	public void setBuildingId(Integer buildingId) {
-		this.buildingId = buildingId;
-	}
+	
 	public Integer getBookedSeats() {
 		return bookedSeats;
 	}

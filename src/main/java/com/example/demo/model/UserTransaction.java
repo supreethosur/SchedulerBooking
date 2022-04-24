@@ -13,7 +13,9 @@ public class UserTransaction {
 	private Integer headerId;
 	private Integer transactionid;
 	private Integer bookedSeat;
-	private LocalDateTime dateCreated;
+	private LocalDateTime dateBooked;
+	private LocalDateTime transactionDate;
+	
 	public Integer getUserTransactionId() {
 		return userTransactionId;
 	}
@@ -38,13 +40,18 @@ public class UserTransaction {
 	public void setBookedSeat(Integer bookedSeat) {
 		this.bookedSeat = bookedSeat;
 	}
-	public LocalDateTime getDateCreated() {
-		return dateCreated;
+	public LocalDateTime getDateBooked() {
+		return dateBooked;
 	}
-	public void setDateCreated(LocalDateTime dateCreated) {
-		this.dateCreated = dateCreated;
+	public void setDateBooked(LocalDateTime dateBooked) {
+		this.dateBooked = dateBooked;
 	}
-	
+	public LocalDateTime getTransactionDate() {
+		return transactionDate;
+	}
+	public void setTransactionDate(LocalDateTime transactionDate) {
+		this.transactionDate = transactionDate;
+	}
 	
 	
 	
